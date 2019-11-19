@@ -20,5 +20,13 @@
   "homepage": "https://github.com/smnbbrv/github-actions-playground#readme",
   "dependencies": {
     "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.5",
+    "@semantic-release/commit-analyzer": "^6.3.3",
+    "@semantic-release/git": "^7.0.18",
+    "@semantic-release/npm": "^5.3.4",
+    "@semantic-release/release-notes-generator": "^7.3.3",
+    "semantic-release": "^15.13.31"
   }
 }

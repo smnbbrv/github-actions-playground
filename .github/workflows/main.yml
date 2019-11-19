@@ -1,12 +1,19 @@
-name: Main workflow
+name: Publish
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   main:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Clone
         uses: actions/checkout@v1
       - name: Install node
@@ -21,3 +28,5 @@ jobs:
         run: npm run test
       - name: Lint
         run: npm run lint
+      - name: Publish
+        run: npx semantic-release

@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 10.x
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Test
@@ -27,5 +27,5 @@ jobs:
         run: npm run lint
       - name: Publish
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Build\" && exit 1",
-    "test": "echo \"Test\" && exit 1",
-    "lint": "echo \"Lint\" && exit 1"
+    "build": "echo 'Build'",
+    "test": "echo 'Test'",
+    "lint": "echo 'Lint'"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/smnbbrv/github-actions-playground/issues"
   },
-  "homepage": "https://github.com/smnbbrv/github-actions-playground#readme"
+  "homepage": "https://github.com/smnbbrv/github-actions-playground#readme",
+  "dependencies": {
+    "typescript": "^3.7.2"
+  }
 }

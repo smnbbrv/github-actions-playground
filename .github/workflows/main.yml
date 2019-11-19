@@ -9,11 +9,11 @@ jobs:
   main:
     name: Build and test
     runs-on: ubuntu-latest
-    if: '!github.event.head_commit.message.contains("ci skip")'
+    if: '!contains(github.event.head_commit.message).contains("[ci skip]")'
     steps:
       - name: Dump GitHub context
         env:
-          VALUE: ${{ !github.event.head_commit.message.contains("ci skip") }}
+          VALUE: ${{ !contains(github.event.head_commit.message).contains("[ci skip]") }}
         run: echo "$VALUE"
       - name: Clone
         uses: actions/checkout@v1

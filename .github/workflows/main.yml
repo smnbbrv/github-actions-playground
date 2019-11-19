@@ -9,11 +9,12 @@ jobs:
   main:
     name: Build and test
     runs-on: ubuntu-latest
+    if: '!github.event.head_commit.message.contains("ci skip")'
     steps:
       - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+          VALUE: ${{ !github.event.head_commit.message.contains("ci skip") }}
+        run: echo "$VALUE"
       - name: Clone
         uses: actions/checkout@v1
       - name: Install node

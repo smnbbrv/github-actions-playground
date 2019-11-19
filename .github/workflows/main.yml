@@ -26,4 +26,6 @@ jobs:
       - name: Lint
         run: npm run lint
       - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: npx semantic-release

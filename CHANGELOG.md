@@ -1,3 +1,15 @@
+# [0.2.0](https://github.com/smnbbrv/github-actions-playground/compare/v0.1.1...v0.2.0) (2019-11-21)
+
+
+### Features
+
+* breaking change test ([56e74bb](https://github.com/smnbbrv/github-actions-playground/commit/56e74bb7d8fe89ca0b927543334cb0dac39315ca))
+
+
+### BREAKING CHANGES
+
+* file was changed
+
 ## [0.1.1](https://github.com/smnbbrv/github-actions-playground/compare/v0.1.0...v0.1.1) (2019-11-21)
 
 

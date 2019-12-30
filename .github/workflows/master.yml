@@ -14,9 +14,9 @@ jobs:
         run: wget -O /tmp/protoc.zip https://github.com/protocolbuffers/protobuf/releases/download/v3.11.2/protoc-3.11.2-linux-x86_64.zip
       - name: unzip
         run: |
-          unzip /tmp/protoc.zip -d protoc3
-          mv protoc3/bin/* /usr/local/bin/
-          mv protoc3/include/* /usr/local/include/
+          unzip /tmp/protoc.zip -d /tmp/protoc3
+          sudo mv /tmp/protoc3/bin/* /usr/local/bin/
+          sudo mv /tmp/protoc3/include/* /usr/local/include/
       - name: try
         run: protoc --help
   publish:

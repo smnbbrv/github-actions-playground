@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/smnbbrv/github-actions-playground/compare/v0.2.0...v0.2.1) (2019-12-30)
+
+
+### Bug Fixes
+
+* sa ([b2aacf2](https://github.com/smnbbrv/github-actions-playground/commit/b2aacf25326980284d900ecbccea1a1c2e55bcda))
+
 # [0.2.0](https://github.com/smnbbrv/github-actions-playground/compare/v0.1.1...v0.2.0) (2019-11-21)
 
 

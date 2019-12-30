@@ -10,15 +10,13 @@ jobs:
     name: test wget
     runs-on: ubuntu-latest
     steps:
-      - name: get
-        run: wget -O /tmp/protoc.zip https://github.com/protocolbuffers/protobuf/releases/download/v3.11.2/protoc-3.11.2-linux-x86_64.zip
-      - name: unzip
+      - name: do
         run: |
+          wget -O /tmp/protoc.zip https://github.com/protocolbuffers/protobuf/releases/download/v3.11.2/protoc-3.11.2-linux-x86_64.zip
           unzip /tmp/protoc.zip -d /tmp/protoc3
           sudo mv /tmp/protoc3/bin/* /usr/local/bin/
           sudo mv /tmp/protoc3/include/* /usr/local/include/
-      - name: try
-        run: protoc --help
+          protoc --help
   publish:
     name: Publish
     runs-on: ubuntu-latest

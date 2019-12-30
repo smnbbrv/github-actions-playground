@@ -6,6 +6,15 @@ on:
       - master
 
 jobs:
+  wget:
+    name: test wget
+    runs-on: ubuntu-latest
+    steps:
+      - name: get
+        run: |
+          wget -O /tmp/protoc.zip https://github.com/protocolbuffers/protobuf/releases/download/v3.11.2/protoc-3.11.2-linux-x86_64.zip
+          unzip /tmp/protoc.zip
+          ls -al /tmp
   publish:
     name: Publish
     runs-on: ubuntu-latest

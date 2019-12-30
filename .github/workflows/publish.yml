@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
-  main:
-    name: Build and test
+  publish:
+    name: Publish
+    needs: [lint, test]
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
@@ -19,10 +20,6 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Test
-        run: npm run test
-      - name: Lint
-        run: npm run lint
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

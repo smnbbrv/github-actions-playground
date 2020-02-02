@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/smnbbrv/github-actions-playground/compare/v0.2.2...v0.2.3) (2020-02-02)
+
+
+### Bug Fixes
+
+* nothing ([da813e1](https://github.com/smnbbrv/github-actions-playground/commit/da813e1a83d397ffbba3f6cc7ee4d34d3691d5f8))
+
 ## [0.2.2](https://github.com/smnbbrv/github-actions-playground/compare/v0.2.1...v0.2.2) (2020-02-02)
 
 

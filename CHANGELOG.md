@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/smnbbrv/github-actions-playground/compare/v0.2.1...v0.2.2) (2020-02-02)
+
+
+### Features
+
+* custom publish ([14e8b4d](https://github.com/smnbbrv/github-actions-playground/commit/14e8b4dc7b462b71a1953ee461eee36a6d011642))
+* custom publish 2 ([2b1c194](https://github.com/smnbbrv/github-actions-playground/commit/2b1c194265d0bc4d851df33ec3fefcfe822b8360))
+* custom publish 2 ([0194cb3](https://github.com/smnbbrv/github-actions-playground/commit/0194cb35f9d8e968246ca6c1fe21a6784fafdbc1))
+
 ## [0.2.1](https://github.com/smnbbrv/github-actions-playground/compare/v0.2.0...v0.2.1) (2019-12-30)
 
 

@@ -38,8 +38,9 @@
         [
             "@semantic-release/exec",
             {
-                "verifyConditionsCmd": "node npm-publish/verify.js",
-                "prepareCmd": "node npm-publish/prepare.js test.json \"${nextRelease.version}\""
+                "verifyConditionsCmd": "export NPM_TOKEN=234 && node npm-publish/verify.js",
+                "prepareCmd": "node npm-publish/prepare.js test.json \"${nextRelease.version}\"",
+                "publishCmd": "cat .npmrc && cat test.json"
             }
         ]
     ]
